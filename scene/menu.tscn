@@ -1,0 +1,187 @@
+[gd_scene format=3 uid="uid://br2suyaoipfv0"]
+
+[ext_resource type="Script" uid="uid://dgamrmle0daep" path="res://scripts/menu.gd" id="1_akoio"]
+[ext_resource type="Texture2D" uid="uid://bq1b613sl4vn4" path="res://image/Menu_image/BG_Menu.png" id="1_xs5te"]
+[ext_resource type="Texture2D" uid="uid://vnfmf3k144nt" path="res://image/Menu_image/Play_Menu.png" id="2_vi6sp"]
+[ext_resource type="Texture2D" uid="uid://6ueq1c3geudd" path="res://image/Menu_image/Start_Over_Menu.png" id="3_1qlln"]
+[ext_resource type="Texture2D" uid="uid://cmu0ua1dibblr" path="res://image/Menu_image/Settings_Menu.png" id="4_wd6lm"]
+[ext_resource type="Texture2D" uid="uid://h8kkl2ky1plc" path="res://image/Menu_image/Exit_Menu.png" id="5_nuiae"]
+[ext_resource type="Texture2D" uid="uid://mpbfvrbjj2gl" path="res://image/Menu_image/Logo_Menu.png" id="6_vi6sp"]
+[ext_resource type="Texture2D" uid="uid://tm3ojnyo4lkn" path="res://image/Menu_image/Car_Menu.png" id="8_nuiae"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jtp7a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bd1lg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_joy2h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uyaop"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sn3jp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xnfli"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wl011"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qccg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wsy7w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_npn5w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jmaj7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xp4oe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vkcq7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_au6l0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_myo41"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3enmj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1arkd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ustcr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jfwq8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gk70v"]
+
+[node name="Menu" type="Node2D" unique_id=1267576627]
+script = ExtResource("1_akoio")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=59600899]
+
+[node name="Background" type="TextureRect" parent="." unique_id=467202098]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -634.0
+offset_top = -353.0
+offset_right = 634.0
+offset_bottom = 353.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xs5te")
+stretch_mode = 6
+
+[node name="Play" type="Button" parent="." unique_id=849837463]
+offset_left = -491.99994
+offset_top = -170.00003
+offset_right = -119.0
+offset_bottom = -86.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jtp7a")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bd1lg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_joy2h")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_uyaop")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sn3jp")
+
+[node name="Play_img" type="TextureRect" parent="Play" unique_id=249601837]
+layout_mode = 0
+offset_left = -60.00006
+offset_top = -91.99997
+offset_right = 1348.0
+offset_bottom = 676.0
+scale = Vector2(0.35, 0.35)
+mouse_filter = 2
+texture = ExtResource("2_vi6sp")
+
+[node name="Start_Over" type="Button" parent="." unique_id=1991208836]
+offset_left = -493.0
+offset_top = -76.0
+offset_right = -120.0
+offset_bottom = 8.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_xnfli")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wl011")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0qccg")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wsy7w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_npn5w")
+
+[node name="Start_Over_img" type="TextureRect" parent="Start_Over" unique_id=2055854784]
+layout_mode = 0
+offset_left = -60.0
+offset_top = -92.0
+offset_right = 1348.0
+offset_bottom = 676.0
+scale = Vector2(0.35, 0.35)
+mouse_filter = 2
+texture = ExtResource("3_1qlln")
+
+[node name="Settings" type="Button" parent="." unique_id=34640192]
+offset_left = -493.0
+offset_top = 17.0
+offset_right = -120.0
+offset_bottom = 101.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jmaj7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xp4oe")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vkcq7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_au6l0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_myo41")
+
+[node name="Settings_img" type="TextureRect" parent="Settings" unique_id=1883525901]
+layout_mode = 0
+offset_left = -60.00006
+offset_top = -92.0
+offset_right = 1348.0
+offset_bottom = 676.0
+scale = Vector2(0.35, 0.35)
+mouse_filter = 2
+texture = ExtResource("4_wd6lm")
+
+[node name="Exit" type="Button" parent="." unique_id=1842775104]
+offset_left = -492.99997
+offset_top = 114.0
+offset_right = -120.0
+offset_bottom = 198.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3enmj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1arkd")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ustcr")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jfwq8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gk70v")
+
+[node name="Exit_img" type="TextureRect" parent="Exit" unique_id=207769268]
+layout_mode = 0
+offset_left = -60.00009
+offset_top = -92.0
+offset_right = 1347.9999
+offset_bottom = 676.0
+scale = Vector2(0.35, 0.35)
+mouse_filter = 2
+texture = ExtResource("5_nuiae")
+
+[node name="Logo" type="TextureRect" parent="." unique_id=1617914382]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -297.0
+offset_top = -493.0
+offset_right = 890.0
+offset_bottom = 403.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_vi6sp")
+
+[node name="Car_shadow" type="TextureRect" parent="." unique_id=1998834337]
+modulate = Color(0, 0, 0, 0.6784314)
+offset_left = -5.262685
+offset_top = -132.8861
+offset_right = 1402.7373
+offset_bottom = 635.1139
+rotation = -0.034906585
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_nuiae")
+
+[node name="Car" type="TextureRect" parent="." unique_id=364065606]
+offset_left = 1.9999999
+offset_top = -150.0
+offset_right = 1410.0
+offset_bottom = 618.0
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_nuiae")
+
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Start_Over" to="." method="_on_Start_Over_2_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
