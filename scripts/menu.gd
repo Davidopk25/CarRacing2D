@@ -1,4 +1,6 @@
 extends Node2D
+# Предзагружаем сцену настроек
+var settings_scene = preload("res://scene/settings.tscn")
 
 # Привязываем функции к кнопкам через код или через вкладку "Сигналы" в Godot
 func _on_Play_pressed() -> void:
@@ -10,8 +12,10 @@ func _on_Start_Over_pressed() -> void:
 	pass
 
 func _on_Settings_pressed() -> void:
-	# Путь к сцене настроек
-	get_tree().change_scene_to_file("res://scene/settings.tscn")
+	# Создаем экземпляр настроек
+	var settings_instance = settings_scene.instantiate()
+	# Добавляем поверх текущей сцены
+	get_tree().current_scene.add_child(settings_instance)
 
 func _on_Exit_pressed() -> void:
 	# Выход из игры

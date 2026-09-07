@@ -15,10 +15,19 @@ run/main_scene="uid://br2suyaoipfv0"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+FpsOverlay="*uid://csrhyj4lunxxw"
+Global="*uid://68dxh3iv8nw"
+
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/local.en.translation", "res://localization/local.ru.translation")
 
 [physics]
 

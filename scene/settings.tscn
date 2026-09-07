@@ -1,9 +1,405 @@
 [gd_scene format=3 uid="uid://crveeycqivp67"]
 
-[ext_resource type="Texture2D" uid="uid://bq1b613sl4vn4" path="res://image/Menu_image/BG_Menu.png" id="1_likc5"]
+[ext_resource type="Script" uid="uid://bcms7qslslp5m" path="res://scripts/settings.gd" id="1_uhf66"]
+[ext_resource type="Texture2D" uid="uid://cpcyhuw40dpbj" path="res://image/BG.png" id="2_ftovt"]
+[ext_resource type="Texture2D" uid="uid://811xhvc0tehm" path="res://image/Сlose.png" id="3_wyye3"]
+[ext_resource type="Texture2D" uid="uid://dkkgnw75s8sbu" path="res://image/BG_Button.png" id="4_ftovt"]
+[ext_resource type="Texture2D" uid="uid://gx051gye3hyc" path="res://image/English.png" id="4_wyye3"]
+[ext_resource type="Texture2D" uid="uid://cjuxqyj2yhtjt" path="res://image/Russian.png" id="6_keur6"]
 
-[node name="Settings" type="Node2D" unique_id=1835076179]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6pmnr"]
 
-[node name="BgMenu" type="Sprite2D" parent="." unique_id=1732869327]
-position = Vector2(467, 129)
-texture = ExtResource("1_likc5")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qa2gp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pukvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xg6vf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gnvis"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_4pcrv"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_wyye3"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_keur6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1arkd"]
+content_margin_top = 25.0
+content_margin_right = 200.0
+bg_color = Color(0.09019608, 0.14901961, 0.2784314, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftovt"]
+bg_color = Color(0.39607844, 0.62352943, 0.81960785, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyye3"]
+bg_color = Color(0.09019608, 0.14901961, 0.2784314, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sn3jp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jtp7a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3enmj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1arkd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ustcr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_53u36"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bd1lg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aj37a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cxps"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uyaop"]
+
+[node name="Settings" type="Control" unique_id=941666588]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uhf66")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1903822834]
+layout_mode = 0
+offset_left = -2414.0
+offset_top = -556.0
+offset_right = 1586.0
+offset_bottom = 644.0
+scale = Vector2(1.5, 1.5)
+color = Color(0, 0, 0, 0.3529412)
+
+[node name="BG_Img" type="TextureRect" parent="." unique_id=684627891]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -172.0
+offset_bottom = 172.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ftovt")
+
+[node name="Close" type="Button" parent="BG_Img" unique_id=1092854106]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.725
+anchor_top = 0.23700002
+anchor_right = 0.771
+anchor_bottom = 0.28800002
+offset_left = -0.2000122
+offset_top = -0.104019165
+offset_right = 0.14123535
+offset_bottom = 0.41503906
+grow_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6pmnr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qa2gp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pukvj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xg6vf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gnvis")
+
+[node name="Close_Img" type="TextureRect" parent="BG_Img/Close" unique_id=1165835972]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.666626
+offset_top = -40.555527
+offset_right = 984.3334
+offset_bottom = 983.44446
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.08, 0.08)
+mouse_filter = 2
+texture = ExtResource("3_wyye3")
+
+[node name="Settings" type="Label" parent="BG_Img" unique_id=150661652]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -274.0
+offset_right = 151.0
+offset_bottom = -211.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 45
+text = "settings.menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Audio" type="Label" parent="BG_Img" unique_id=898102735]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.0
+offset_top = -194.0
+offset_right = 98.0
+offset_bottom = -152.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "audio.settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sound_Volume" type="Label" parent="BG_Img" unique_id=816611331]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 352.0
+offset_right = 517.0
+offset_bottom = 388.0
+theme_override_font_sizes/font_size = 20
+text = "sound.volume.settings"
+
+[node name="HSlider" type="HSlider" parent="BG_Img" unique_id=1180991386]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -168.0
+offset_right = 232.0
+offset_bottom = -82.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/grabber = SubResource("ImageTexture_4pcrv")
+theme_override_icons/grabber_highlight = SubResource("ImageTexture_wyye3")
+theme_override_icons/grabber_disabled = SubResource("ImageTexture_keur6")
+theme_override_styles/slider = SubResource("StyleBoxFlat_1arkd")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ftovt")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_ftovt")
+
+[node name="Language" type="Label" parent="BG_Img" unique_id=2119461342]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.0
+offset_top = -84.0
+offset_right = 123.0
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "language.settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="BG_Img" unique_id=1503338740]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 468.5
+offset_right = 517.0
+offset_bottom = 504.5
+theme_override_font_sizes/font_size = 20
+text = "change.language.settings"
+
+[node name="EN_Panel" type="Panel" parent="BG_Img" unique_id=998633567]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -34.0
+offset_right = 97.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wyye3")
+
+[node name="English" type="Label" parent="BG_Img/EN_Panel" unique_id=1501900960]
+layout_mode = 0
+offset_left = -30.0
+offset_top = 3.0
+offset_right = 243.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 17
+text = "english.settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="BG_Img/EN_Panel" unique_id=1503671717]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 499.0
+offset_bottom = 285.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_wyye3")
+
+[node name="English2" type="Button" parent="BG_Img/EN_Panel" unique_id=1033520657]
+layout_mode = 0
+offset_right = 173.0
+offset_bottom = 42.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sn3jp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jtp7a")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3enmj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1arkd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ustcr")
+
+[node name="RU_Panel" type="Panel" parent="BG_Img" unique_id=53884355]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 109.0
+offset_top = -34.0
+offset_right = 282.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wyye3")
+
+[node name="Russian" type="Label" parent="BG_Img/RU_Panel" unique_id=1537912709]
+layout_mode = 0
+offset_left = -30.0
+offset_top = 3.0
+offset_right = 243.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 17
+text = "russian.settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="BG_Img/RU_Panel" unique_id=1713864978]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 499.0
+offset_bottom = 285.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("6_keur6")
+
+[node name="Russian2" type="Button" parent="BG_Img/RU_Panel" unique_id=1713290659]
+layout_mode = 0
+offset_right = 173.0
+offset_bottom = 42.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sn3jp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jtp7a")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3enmj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1arkd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ustcr")
+
+[node name="CheckButton" type="CheckButton" parent="BG_Img" unique_id=131691838]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 214.0
+offset_top = 72.0
+offset_right = 258.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.8, 1.8)
+
+[node name="Show_Fps_Counter" type="Label" parent="BG_Img" unique_id=2059714493]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 572.0
+offset_right = 517.0
+offset_bottom = 608.0
+theme_override_font_sizes/font_size = 20
+text = "show.fps.counter.settings"
+
+[node name="Other_Options" type="Label" parent="BG_Img" unique_id=1618850872]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.0
+offset_top = 26.0
+offset_right = 156.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "other.options.settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Save_Img" type="TextureRect" parent="BG_Img" unique_id=2076886062]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.0
+offset_top = 128.0
+offset_right = 1386.0
+offset_bottom = 800.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_ftovt")
+
+[node name="Save" type="Button" parent="BG_Img/Save_Img" unique_id=332062944]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 216.0
+offset_right = 1280.0
+offset_bottom = 464.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_53u36")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bd1lg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_aj37a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2cxps")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uyaop")
+
+[node name="Save2" type="Label" parent="BG_Img/Save_Img" unique_id=980619368]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 216.0
+offset_right = 1280.0
+offset_bottom = 468.0
+theme_override_font_sizes/font_size = 125
+text = "save.settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="BG_Img/Close" to="." method="_on_close_pressed"]
+[connection signal="value_changed" from="BG_Img/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="BG_Img/EN_Panel/English2" to="." method="_on_english_pressed"]
+[connection signal="pressed" from="BG_Img/RU_Panel/Russian2" to="." method="_on_russian_pressed"]
+[connection signal="toggled" from="BG_Img/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="BG_Img/Save_Img/Save" to="." method="_on_save_pressed"]

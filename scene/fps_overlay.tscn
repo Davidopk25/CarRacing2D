@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://csrhyj4lunxxw"]
+
+[ext_resource type="Script" uid="uid://mskpga6mhdr8" path="res://scripts/FPSOverlay.gd" id="1_6s8jw"]
+
+[node name="FPSOverlay" type="CanvasLayer" unique_id=1048780038]
+script = ExtResource("1_6s8jw")
+
+[node name="FPS" type="Label" parent="." unique_id=304207979]
+offset_left = 95.0
+offset_right = 135.0
+offset_bottom = 23.0
