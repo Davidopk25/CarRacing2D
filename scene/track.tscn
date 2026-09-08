@@ -1,3 +1,372 @@
 [gd_scene format=3 uid="uid://68nppyg68g0f"]
 
-[node name="Track" type="Node2D" unique_id=996736740]
+[ext_resource type="Script" uid="uid://cxcchey03frlr" path="res://scripts/track.gd" id="1_oykuh"]
+[ext_resource type="Texture2D" uid="uid://cpcyhuw40dpbj" path="res://image/BG.png" id="2_3dd0s"]
+[ext_resource type="Texture2D" uid="uid://811xhvc0tehm" path="res://image/Сlose.png" id="3_oqg4r"]
+[ext_resource type="Texture2D" uid="uid://dkkgnw75s8sbu" path="res://image/BG_Button.png" id="4_nru75"]
+[ext_resource type="Texture2D" uid="uid://d26daro0noeor" path="res://image/Track_image/Left_Button_Track.png" id="5_xbu5k"]
+[ext_resource type="Texture2D" uid="uid://bxwdgmmgyk0ty" path="res://image/Track_image/Right_Button_Track.png" id="6_gi6bl"]
+[ext_resource type="Texture2D" uid="uid://djr47yvabxybm" path="res://image/Track_image/1_Map_Track.png" id="7_onqol"]
+[ext_resource type="Texture2D" uid="uid://d3d7o3r2numor" path="res://image/Track_image/2_Map_Track.png" id="8_8q2et"]
+[ext_resource type="Texture2D" uid="uid://b7pgvfgejqod7" path="res://image/Track_image/3_Map_Track.png" id="9_02vkn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_np65b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hx5tn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ja31l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3rmcq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nc2ka"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1mopw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bptw0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5nqer"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fjmid"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qckif"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6pmnr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qa2gp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pukvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xg6vf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gnvis"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6pmnr"]
+bg_color = Color(0.059987072, 0, 0.6, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qa2gp"]
+bg_color = Color(0, 0, 0, 0.6627451)
+
+[node name="Track" type="Control" unique_id=29350260 node_paths=PackedStringArray("cards", "btn_left", "btn_right")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oykuh")
+cards = [NodePath("BG_Img/1Map"), NodePath("BG_Img/2Map"), NodePath("BG_Img/3Map")]
+btn_left = NodePath("BG_Img/Left")
+btn_right = NodePath("BG_Img/Right")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=479295822]
+layout_mode = 1
+offset_left = -2414.0
+offset_top = -556.0
+offset_right = 1586.0
+offset_bottom = 644.0
+scale = Vector2(1.5, 1.5)
+color = Color(0, 0, 0, 0.3529412)
+
+[node name="BG_Img" type="TextureRect" parent="." unique_id=366052467]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -170.0
+offset_right = 1175.0
+offset_bottom = 822.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_3dd0s")
+
+[node name="Close" type="Button" parent="BG_Img" unique_id=519450093]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.725
+anchor_top = 0.23700002
+anchor_right = 0.771
+anchor_bottom = 0.28800002
+offset_left = -0.2000122
+offset_top = -0.104019165
+offset_right = 0.14123535
+offset_bottom = 0.41503906
+grow_horizontal = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_np65b")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hx5tn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ja31l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3rmcq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nc2ka")
+
+[node name="Close_Img" type="TextureRect" parent="BG_Img/Close" unique_id=1881947273]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.666626
+offset_top = -40.555527
+offset_right = 984.3334
+offset_bottom = 983.44446
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.08, 0.08)
+mouse_filter = 2
+texture = ExtResource("3_oqg4r")
+
+[node name="Select Track" type="Label" parent="BG_Img" unique_id=2143114564]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -274.0
+offset_right = 151.0
+offset_bottom = -211.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 45
+text = "select.track.track"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Save_Img" type="TextureRect" parent="BG_Img" unique_id=1704849719]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.0
+offset_top = 128.0
+offset_right = 1386.0
+offset_bottom = 800.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_nru75")
+
+[node name="Save" type="Button" parent="BG_Img/Save_Img" unique_id=272222296]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 216.0
+offset_right = 1280.0
+offset_bottom = 464.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1mopw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bptw0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5nqer")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fjmid")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qckif")
+
+[node name="Save2" type="Label" parent="BG_Img/Save_Img" unique_id=789535599]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 216.0
+offset_right = 1280.0
+offset_bottom = 468.0
+theme_override_font_sizes/font_size = 125
+text = "save.settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Left" type="Button" parent="BG_Img" unique_id=1821367286]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.0
+offset_top = -61.0
+offset_right = -63.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6pmnr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qa2gp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pukvj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xg6vf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gnvis")
+
+[node name="TextureRect" type="TextureRect" parent="BG_Img/Left" unique_id=444719199]
+layout_mode = 0
+offset_left = -95.0
+offset_top = -83.0
+offset_right = 831.0
+offset_bottom = 843.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_xbu5k")
+
+[node name="Right" type="Button" parent="BG_Img" unique_id=1999748538]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 100.0
+offset_top = -61.0
+offset_right = 186.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6pmnr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qa2gp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pukvj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xg6vf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gnvis")
+
+[node name="TextureRect" type="TextureRect" parent="BG_Img/Right" unique_id=1984639762]
+layout_mode = 0
+offset_left = -95.0
+offset_top = -83.0
+offset_right = 831.0
+offset_bottom = 843.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_gi6bl")
+
+[node name="1Map" type="Panel" parent="BG_Img" unique_id=1650208731]
+unique_name_in_owner = true
+clip_children = 1
+layout_mode = 0
+offset_left = 512.0
+offset_top = 320.0
+offset_right = 707.0
+offset_bottom = 652.0
+scale = Vector2(0.9, 0.9)
+theme_override_styles/panel = SubResource("StyleBoxFlat_6pmnr")
+
+[node name="TextureRect" type="TextureRect" parent="BG_Img/1Map" unique_id=678611341]
+layout_mode = 0
+offset_right = 669.0
+offset_bottom = 1115.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_onqol")
+
+[node name="Panel" type="Panel" parent="BG_Img/1Map" unique_id=1126416214]
+layout_mode = 0
+offset_left = -1.0000305
+offset_top = 265.99997
+offset_right = 195.99997
+offset_bottom = 332.99997
+theme_override_styles/panel = SubResource("StyleBoxFlat_qa2gp")
+
+[node name="NameLabel" type="Label" parent="BG_Img/1Map/Panel" unique_id=1025500046]
+layout_mode = 0
+offset_right = 196.5556
+offset_bottom = 34.00003
+text = "diam.track"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="BG_Img/1Map/Panel" unique_id=326670468]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 195.55554
+offset_bottom = 66.22223
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2Map" type="Panel" parent="BG_Img" unique_id=1753579535]
+unique_name_in_owner = true
+clip_children = 1
+layout_mode = 0
+offset_left = 812.0
+offset_top = 320.0
+offset_right = 1007.0
+offset_bottom = 652.0
+scale = Vector2(0.9, 0.9)
+theme_override_styles/panel = SubResource("StyleBoxFlat_6pmnr")
+
+[node name="TextureRect" type="TextureRect" parent="BG_Img/2Map" unique_id=52131685]
+layout_mode = 0
+offset_right = 669.0
+offset_bottom = 1115.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_8q2et")
+
+[node name="Panel" type="Panel" parent="BG_Img/2Map" unique_id=446275072]
+layout_mode = 0
+offset_left = -1.0000305
+offset_top = 265.99997
+offset_right = 195.99997
+offset_bottom = 332.99997
+theme_override_styles/panel = SubResource("StyleBoxFlat_qa2gp")
+
+[node name="NameLabel" type="Label" parent="BG_Img/2Map/Panel" unique_id=543572390]
+layout_mode = 0
+offset_right = 196.5556
+offset_bottom = 34.00003
+text = "the_russian.plain.track"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="BG_Img/2Map/Panel" unique_id=1301559449]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 195.55554
+offset_bottom = 66.22223
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3Map" type="Panel" parent="BG_Img" unique_id=2067027302]
+unique_name_in_owner = true
+clip_children = 1
+layout_mode = 0
+offset_left = 1112.0
+offset_top = 320.0
+offset_right = 1307.0
+offset_bottom = 652.0
+scale = Vector2(0.9, 0.9)
+theme_override_styles/panel = SubResource("StyleBoxFlat_6pmnr")
+
+[node name="TextureRect" type="TextureRect" parent="BG_Img/3Map" unique_id=1871738801]
+layout_mode = 0
+offset_right = 669.0
+offset_bottom = 1115.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_02vkn")
+
+[node name="Panel" type="Panel" parent="BG_Img/3Map" unique_id=1467557379]
+layout_mode = 0
+offset_left = -1.0000305
+offset_top = 265.99997
+offset_right = 195.99997
+offset_bottom = 332.99997
+theme_override_styles/panel = SubResource("StyleBoxFlat_qa2gp")
+
+[node name="NameLabel" type="Label" parent="BG_Img/3Map/Panel" unique_id=947197596]
+layout_mode = 0
+offset_right = 196.5556
+offset_bottom = 34.00003
+text = "mt.fuji.track"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="BG_Img/3Map/Panel" unique_id=1849095219]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 195.55554
+offset_bottom = 66.22223
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="BG_Img/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="BG_Img/Save_Img/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="BG_Img/Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="BG_Img/Right" to="." method="_on_right_pressed"]

@@ -1,12 +1,15 @@
 extends Node
  
 const SAVE_PATH = "user://settings.cfg"
- 
+const SAVE_TRACK_PATH = "user://savegame.save"
+
 # Настройки по умолчанию
 var volume_db: float = 0.0 # В децибелах
 var language: String = "en"
 var fps_enabled: bool = false
- 
+
+var selected_track_index: int = 0 
+
 func _ready() -> void:
 	load_settings()
  
@@ -58,3 +61,14 @@ func get_system_default_lang() -> String:
 func get_system_device_volume() -> float:
 	# Возвращает базовый уровень в дБ (по умолчанию 0 дБ, так как прямого доступа к микшеру ОС в Godot нет)
 	return 0.0
+	
+func save_game():
+	var file = FileAccess.open(SAVE_TRACK_PATH, FileAccess.WRITE)
+	if file:
+		file.store_var(selected_track_index)
+ 
+func load_game():
+	if FileAccess.file_exists(SAVE_PATH):
+		var file = FileAccess.open(SAVE_TRACK_PATH, FileAccess.READ)
+		if file:
+			selected_track_index = file.get_var()
