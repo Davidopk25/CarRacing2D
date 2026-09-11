@@ -1,3 +1,486 @@
 [gd_scene format=3 uid="uid://c18uabto5lsqx"]
 
+[ext_resource type="Script" uid="uid://c7teeymljdyt1" path="res://scripts/os_menu.gd" id="1_gums7"]
+[ext_resource type="Texture2D" uid="uid://dhw85d4r57kt1" path="res://image/Os_Menu_image/BG_Os_Menu.jpg" id="1_xh87u"]
+[ext_resource type="Texture2D" uid="uid://bob0bomqcyqg7" path="res://image/Os_Menu_image/Start_Os_Menu.png" id="2_gums7"]
+[ext_resource type="Texture2D" uid="uid://xihgl3rww2ac" path="res://image/Coin.png" id="4_24ron"]
+[ext_resource type="Texture2D" uid="uid://cky4gq4bjia13" path="res://image/Os_Menu_image/Engine_Os_Menu.png" id="4_u5wa8"]
+[ext_resource type="Texture2D" uid="uid://bj2bqmmbftu5c" path="res://image/Os_Menu_image/car-blueprint.jpg" id="6_24ron"]
+[ext_resource type="Texture2D" uid="uid://dybosjkgqjtv0" path="res://image/Os_Menu_image/Garage_Os_Menu.png" id="7_jv5qs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gums7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g7lur"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u5wa8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_24ron"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jv5qs"]
+
+[sub_resource type="FontVariation" id="FontVariation_u5wa8"]
+spacing_glyph = -2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xadyu"]
+bg_color = Color(0.09411765, 0.11372549, 0.14901961, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.015686275, 0.023529412, 0.039215688, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j5xbs"]
+bg_color = Color(0.047058824, 0.05882353, 0.08235294, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dxr5g"]
+bg_color = Color(0.17254902, 0.21176471, 0.25490198, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.011764706, 0.015686275, 0.019607844, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_24ron"]
+bg_color = Color(0.09411765, 0.11372549, 0.14901961, 0.7294118)
+corner_radius_top_left = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="FontFile" id="FontFile_6kcgk"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/1/0/ascent = 0.0
+cache/0/1/0/descent = 0.0
+cache/0/1/0/underline_position = 0.0
+cache/0/1/0/underline_thickness = 0.0
+cache/0/1/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ie5f"]
+bg_color = Color(0.047058824, 0.05882353, 0.08235294, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m1gxf"]
+bg_color = Color(0.9372549, 0.6862745, 0.19215687, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
 [node name="OS_Menu" type="Node2D" unique_id=356318374]
+script = ExtResource("1_gums7")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=27162456]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1715633946]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -634.0
+offset_top = -355.0
+offset_right = 634.0
+offset_bottom = 351.0
+grow_horizontal = 2
+texture = ExtResource("1_xh87u")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Race" type="Button" parent="." unique_id=1593707850]
+offset_left = 320.0
+offset_top = 192.0
+offset_right = 560.0
+offset_bottom = 328.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
+
+[node name="Play_img" type="TextureRect" parent="Race" unique_id=1602706772]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47100002
+anchor_top = 0.50200003
+anchor_right = 0.47100002
+anchor_bottom = 0.50200003
+offset_left = -137.04001
+offset_top = -84.272
+offset_right = 1270.9602
+offset_bottom = 778.728
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("2_gums7")
+
+[node name="Play3" type="Label" parent="Race" unique_id=542002566]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.71000004
+anchor_right = 0.467
+anchor_bottom = 0.71000004
+offset_left = -16.080002
+offset_top = -88.560005
+offset_right = 127.92
+offset_bottom = -31.560005
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 21
+text = "Map Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Play2" type="Label" parent="Race" unique_id=985225076]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.71000004
+anchor_right = 0.467
+anchor_bottom = 0.71000004
+offset_left = -112.08
+offset_top = -24.560005
+offset_right = 111.92
+offset_bottom = 32.439995
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 39
+text = "GO RACE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Engine" type="Button" parent="." unique_id=469772168]
+offset_left = -304.0
+offset_top = 104.0
+offset_right = -144.0
+offset_bottom = 328.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xadyu")
+
+[node name="Engine_showlv" type="Label" parent="Engine" unique_id=1650434679]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.583
+anchor_right = 0.5
+anchor_bottom = 0.583
+offset_left = -32.0
+offset_top = -9.983994
+offset_right = 32.0
+offset_bottom = 22.016006
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "Lv 5/10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Engine_showup" type="Label" parent="Engine" unique_id=311819011]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.49400002
+anchor_top = 0.906
+anchor_right = 0.49400002
+anchor_bottom = 0.906
+offset_left = -47.04
+offset_top = -14.335999
+offset_right = 48.96
+offset_bottom = 13.664001
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "+15 BHP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel3" type="Panel" parent="Engine" unique_id=240548745]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.105000004
+anchor_right = 0.5
+anchor_bottom = 0.105000004
+offset_left = -75.0
+offset_top = -18.437
+offset_right = 75.0
+offset_bottom = 19.563
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j5xbs")
+
+[node name="Engine_label" type="Label" parent="Engine/Panel3" unique_id=462877956]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.497
+anchor_top = 0.5
+anchor_right = 0.497
+anchor_bottom = 0.5
+offset_left = -63.549995
+offset_top = -19.474998
+offset_right = 64.45
+offset_bottom = 18.525002
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 25
+text = "ENGINE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="Engine" unique_id=437866339]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.74
+anchor_right = 0.5
+anchor_bottom = 0.74
+offset_left = -72.0
+offset_top = -13.152008
+offset_right = 72.0
+offset_bottom = 21.147995
+theme_override_styles/panel = SubResource("StyleBoxFlat_dxr5g")
+
+[node name="Coin" type="Sprite2D" parent="Engine/Panel2" unique_id=1720924173]
+position = Vector2(128, 16.000011)
+scale = Vector2(0.031250015, 0.031250015)
+texture = ExtResource("4_24ron")
+
+[node name="Engine_price" type="Label" parent="Engine/Panel2" unique_id=1169008895]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40600002
+anchor_top = 0.5
+anchor_right = 0.40600002
+anchor_bottom = 0.5
+offset_left = -50.464
+offset_top = -17.149994
+offset_right = 55.535995
+offset_bottom = 17.850006
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 25
+text = "Cost: 1500"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EngineOsMenu" type="Sprite2D" parent="Engine" unique_id=1510487364]
+position = Vector2(80, 88.608)
+scale = Vector2(0.140625, 0.140625)
+texture = ExtResource("4_u5wa8")
+
+[node name="Stats" type="Panel" parent="." unique_id=619390259]
+offset_left = 272.0
+offset_top = -176.0
+offset_right = 637.0
+offset_bottom = 80.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_24ron")
+
+[node name="Stats_label" type="Label" parent="Stats" unique_id=774473419]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.105000004
+anchor_right = 0.416
+anchor_bottom = 0.105000004
+offset_left = -63.839996
+offset_top = -18.880001
+offset_right = 64.16
+offset_bottom = 19.119999
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 25
+text = "STATISTICS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Speed_stat" type="Label" parent="Stats" unique_id=1597495227]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.328
+anchor_right = 0.416
+anchor_bottom = 0.328
+offset_left = 48.160004
+offset_top = -35.968002
+offset_right = 144.16
+offset_bottom = -7.9680023
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "185 km/h"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Speed_label" type="Label" parent="Stats" unique_id=1672802095]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.24200001
+anchor_right = 0.48200002
+anchor_bottom = 0.24200001
+offset_left = -159.93001
+offset_top = -13.9520035
+offset_right = -63.930008
+offset_bottom = 14.0479965
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "Speed"
+vertical_alignment = 1
+
+[node name="Speed_bar" type="ProgressBar" parent="Stats" unique_id=1826297487]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.044000003
+anchor_top = 0.164
+anchor_right = 0.96400005
+anchor_bottom = 0.22700001
+offset_left = -0.060001373
+offset_top = 38.016
+offset_right = -55.860016
+offset_bottom = 31.887997
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontFile_6kcgk")
+theme_override_font_sizes/font_size = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
+theme_override_styles/fill = SubResource("StyleBoxFlat_m1gxf")
+value = 40.0
+
+[node name="CarBlueprint" type="Sprite2D" parent="." unique_id=992085702]
+position = Vector2(0, -8)
+texture = ExtResource("6_24ron")
+
+[node name="Garage" type="Button" parent="." unique_id=585844384]
+offset_left = -560.0
+offset_top = 240.0
+offset_right = -320.0
+offset_bottom = 312.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
+
+[node name="Play_img" type="TextureRect" parent="Garage" unique_id=385866693]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.504
+anchor_right = 0.467
+anchor_bottom = 0.504
+offset_left = -136.08
+offset_top = -84.288
+offset_right = 1271.9202
+offset_bottom = 778.712
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("7_jv5qs")
+
+[node name="Play2" type="Label" parent="Garage" unique_id=742695594]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.65000004
+anchor_top = 0.55600005
+anchor_right = 0.65000004
+anchor_bottom = 0.55600005
+offset_left = -68.000015
+offset_top = -32.032
+offset_right = 67.999985
+offset_bottom = 31.967995
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 31
+text = "GARAGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Race" to="." method="_on_play_pressed"]
