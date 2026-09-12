@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://c18uabto5lsqx"]
 
-[ext_resource type="Script" uid="uid://c7teeymljdyt1" path="res://scripts/os_menu.gd" id="1_gums7"]
 [ext_resource type="Texture2D" uid="uid://dhw85d4r57kt1" path="res://image/Os_Menu_image/BG_Os_Menu.jpg" id="1_xh87u"]
 [ext_resource type="Texture2D" uid="uid://bob0bomqcyqg7" path="res://image/Os_Menu_image/Start_Os_Menu.png" id="2_gums7"]
 [ext_resource type="Texture2D" uid="uid://xihgl3rww2ac" path="res://image/Coin.png" id="4_24ron"]
 [ext_resource type="Texture2D" uid="uid://cky4gq4bjia13" path="res://image/Os_Menu_image/Engine_Os_Menu.png" id="4_u5wa8"]
 [ext_resource type="Texture2D" uid="uid://bj2bqmmbftu5c" path="res://image/Os_Menu_image/car-blueprint.jpg" id="6_24ron"]
 [ext_resource type="Texture2D" uid="uid://dybosjkgqjtv0" path="res://image/Os_Menu_image/Garage_Os_Menu.png" id="7_jv5qs"]
+[ext_resource type="Texture2D" uid="uid://jd1dor0bj3p5" path="res://image/Os_Menu_image/Settings_Os_Menu.png" id="7_w68ru"]
+[ext_resource type="Texture2D" uid="uid://dob8jpoydf3e" path="res://image/Os_Menu_image/Map_Os_Menu.png" id="8_w68ru"]
+[ext_resource type="Texture2D" uid="uid://4y156c2vv24s" path="res://image/Profile.png" id="9_y26gl"]
+[ext_resource type="Texture2D" uid="uid://bscqcr0jmwpq6" path="res://image/Diamond.png" id="10_wwmx5"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gums7"]
 
@@ -23,6 +26,32 @@ spacing_glyph = -2
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xadyu"]
 bg_color = Color(0.09411765, 0.11372549, 0.14901961, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.015686275, 0.023529412, 0.039215688, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jv5qs"]
+bg_color = Color(0.062032923, 0.07747678, 0.10527774, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.015686275, 0.023529412, 0.039215688, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w68ru"]
+bg_color = Color(0.14540365, 0.17153957, 0.21857637, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -161,8 +190,11 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y26gl"]
+bg_color = Color(0.015142252, 0.020410594, 0.03228843, 0.7294118)
+corner_radius_bottom_left = 8888
+
 [node name="OS_Menu" type="Node2D" unique_id=356318374]
-script = ExtResource("1_gums7")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=27162456]
 
@@ -180,9 +212,9 @@ stretch_mode = 6
 
 [node name="Race" type="Button" parent="." unique_id=1593707850]
 offset_left = 320.0
-offset_top = 192.0
+offset_top = 176.0
 offset_right = 560.0
-offset_bottom = 328.0
+offset_bottom = 312.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
@@ -246,6 +278,8 @@ offset_top = 104.0
 offset_right = -144.0
 offset_bottom = 328.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_xadyu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jv5qs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w68ru")
 
 [node name="Engine_showlv" type="Label" parent="Engine" unique_id=1650434679]
 layout_mode = 1
@@ -450,7 +484,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
 
-[node name="Play_img" type="TextureRect" parent="Garage" unique_id=385866693]
+[node name="Garage_img" type="TextureRect" parent="Garage" unique_id=385866693]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.467
@@ -465,7 +499,7 @@ scale = Vector2(0.2, 0.2)
 mouse_filter = 2
 texture = ExtResource("7_jv5qs")
 
-[node name="Play2" type="Label" parent="Garage" unique_id=742695594]
+[node name="Garage" type="Label" parent="Garage" unique_id=742695594]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.65000004
@@ -482,5 +516,142 @@ theme_override_font_sizes/font_size = 31
 text = "GARAGE"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Settings" type="Button" parent="." unique_id=1650806699]
+offset_left = -568.0
+offset_top = -320.0
+offset_right = -488.0
+offset_bottom = -240.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Settings_img" type="TextureRect" parent="Settings" unique_id=572782162]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.504
+anchor_right = 0.467
+anchor_bottom = 0.504
+offset_left = -77.35998
+offset_top = -80.319984
+offset_right = 722.64
+offset_bottom = 719.6799
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("7_w68ru")
+expand_mode = 1
+
+[node name="Map" type="Button" parent="." unique_id=1806709157]
+offset_left = 472.0
+offset_top = 88.0
+offset_right = 552.0
+offset_bottom = 168.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Map_img" type="TextureRect" parent="Map" unique_id=696990405]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.504
+anchor_right = 0.467
+anchor_bottom = 0.504
+offset_left = -69.36003
+offset_top = -72.32
+offset_right = 650.64
+offset_bottom = 647.6799
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("8_w68ru")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=405989889]
+offset_left = 368.0
+offset_top = -304.0
+offset_right = 536.0
+offset_bottom = -256.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y26gl")
+
+[node name="Coin" type="Sprite2D" parent="Panel" unique_id=737036406]
+position = Vector2(100, 12)
+scale = Vector2(0.0234375, 0.0234375)
+texture = ExtResource("4_24ron")
+
+[node name="Engine_showup2" type="Label" parent="Panel" unique_id=2007056889]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.71400005
+anchor_top = 0.5
+anchor_right = 0.71400005
+anchor_bottom = 0.5
+offset_left = -95.95201
+offset_right = -31.952011
+offset_bottom = 22.0
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "245"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Engine_showup" type="Label" parent="Panel" unique_id=794374137]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.71400005
+anchor_top = 0.45800003
+anchor_right = 0.71400005
+anchor_bottom = 0.45800003
+offset_left = -95.952
+offset_top = -19.984009
+offset_right = -31.952003
+offset_bottom = 2.0159912
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "9850"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Profile" type="Button" parent="." unique_id=897402263]
+offset_left = 480.0
+offset_top = -320.0
+offset_right = 560.0
+offset_bottom = -240.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Profile_img" type="TextureRect" parent="Profile" unique_id=1151805297]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.504
+anchor_right = 0.467
+anchor_bottom = 0.504
+offset_left = -45.35998
+offset_top = -106.98658
+offset_right = 434.63953
+offset_bottom = 959.6791
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("9_y26gl")
+expand_mode = 1
+
+[node name="Diamond" type="Sprite2D" parent="." unique_id=763395476]
+position = Vector2(468, -268)
+scale = Vector2(0.0234375, 0.0234375)
+texture = ExtResource("10_wwmx5")
 
 [connection signal="pressed" from="Race" to="." method="_on_play_pressed"]
