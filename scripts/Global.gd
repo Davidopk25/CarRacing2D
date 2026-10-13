@@ -17,8 +17,8 @@ var fps_enabled: bool = false
 var player_gold: int = 0
 var player_diamonds: int = 0
 
-var selected_track_index
-var selected_car_index
+var selected_track_index: int = 0
+var selected_car_index: int = 0
 var all_cars = []
 var all_prices = []
 
@@ -186,12 +186,12 @@ func load_user():
 		if file.get_value("player", "money") != null:
 			player_gold = file.get_value("player", "money")
 		else:
-			player_gold = 99999999999
+			player_gold = 0
 			
 		if file.get_value("player", "diamonds") != null:
 			player_diamonds = file.get_value("player", "diamonds")
 		else:
-			player_diamonds = 99999999999
+			player_diamonds = 0
 	
 	else:
 		player_gold = 0
