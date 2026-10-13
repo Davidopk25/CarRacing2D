@@ -3,10 +3,11 @@ keys,ru,en
 "start.over.menu","ИГРАТЬ СНОВА","PLAY OVER"
 "settings.menu","НАСТРОЙКИ","SETTINGS"
 "exit.menu","ВЫЙТИ","EXIT"
+
 "engine.os.menu","Двигатель","Engine"
 "сhassis.os.menu","Шасси","Chassis"
 "brakes.os.menu","Тормоза","Brakes"
-"gearbox.os.menu","Коробка передач","Gearbox"
+"gearbox.os.menu","КПП","Gearbox"
 "garage.os.menu","Гараж","Garage"
 "player.profile.os.menu","Профиль Игрока","Player Profile"
 "cost.os.menu","Стоимость","Cost"
@@ -15,8 +16,10 @@ keys,ru,en
 "acceleration.os.menu","Ускорение","Acceleration"
 "management.os.menu","Управление","Management"
 "braking.os.menu","Торможение","Braking"
+
 "back.garage","Назад","Back"
 "select.garage","Выбрать","Select"
+
 "audio.settings","АУДИО","AUDIO"
 "sound.volume.settings","Громкость звука:","Sound Volume:"
 "language.settings","ЯЗЫК","LANGUAGE"
@@ -26,6 +29,7 @@ keys,ru,en
 "other.options.settings","ДРУГИЕ ОПЦИИ","OTHER OPTIONS"
 "show.fps.counter.settings","Показать ФПС счетчик:","Show FPS counter:"
 "save.settings","CОХРАНИТЬ","SAVE"
+
 "select.track.track","ВЫБЕРИТЕ ТРЕК","SELECT TRACK"
 "diam.track","Диам","Diam"
 "mt.fuji.track","Гора Фудзи","Mt. Fuji"

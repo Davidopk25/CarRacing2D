@@ -58,8 +58,6 @@ spacing_glyph = -2
 [node name="Menu" type="Node2D" unique_id=1267576627]
 script = ExtResource("1_akoio")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=59600899]
-
 [node name="Background" type="TextureRect" parent="." unique_id=467202098]
 anchors_preset = 15
 anchor_right = 1.0
@@ -72,6 +70,8 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_xs5te")
 stretch_mode = 6
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=59600899]
 
 [node name="Logo" type="TextureRect" parent="." unique_id=1617914382]
 anchors_preset = 5
@@ -236,6 +236,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
-[connection signal="pressed" from="Start_Over" to="." method="_on_Start_Over_2_pressed"]
+[connection signal="pressed" from="Start_Over" to="." method="_on_Start_Over_pressed"]
 [connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]

@@ -1,3 +1,1070 @@
 [gd_scene format=3 uid="uid://bwug032y2n5jc"]
 
-[node name="Garage" type="Node2D" unique_id=1795902996]
+[ext_resource type="Texture2D" uid="uid://dhw85d4r57kt1" path="res://image/Os_Menu_image/BG_Os_Menu.jpg" id="1_ldun4"]
+[ext_resource type="Script" uid="uid://ctfk3cygrue7n" path="res://scripts/garage.gd" id="1_vnf3a"]
+[ext_resource type="Texture2D" uid="uid://b2yshaov11yeb" path="res://image/Garage/cars/Silvia/2.png" id="3_3o0nm"]
+[ext_resource type="Texture2D" uid="uid://c0ils37wsbpkt" path="res://icon.svg" id="4_ldun4"]
+[ext_resource type="Texture2D" uid="uid://cpvetmc4kn0th" path="res://image/Garage/cars/Silvia/1.png" id="7_q0pdc"]
+[ext_resource type="Texture2D" uid="uid://0yay8fk2fbr2" path="res://image/Garage/cars/Porsche/1.png" id="8_3o0nm"]
+[ext_resource type="Texture2D" uid="uid://xihgl3rww2ac" path="res://image/Coin.png" id="8_cilel"]
+[ext_resource type="Texture2D" uid="uid://csqxhqr5w6g1w" path="res://image/Garage/Select_Garage.png" id="8_sjabv"]
+[ext_resource type="Texture2D" uid="uid://t80k3owhfo47" path="res://image/Garage/cars/Ferrari/1.png" id="9_oihwm"]
+[ext_resource type="Texture2D" uid="uid://bscqcr0jmwpq6" path="res://image/Diamond.png" id="9_pfdqo"]
+[ext_resource type="Texture2D" uid="uid://4y156c2vv24s" path="res://image/Profile.png" id="10_xp3ex"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gums7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g7lur"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u5wa8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_24ron"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jv5qs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y26gl"]
+bg_color = Color(0.015142252, 0.020410594, 0.03228843, 0.7294118)
+corner_radius_bottom_left = 8888
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_24ron"]
+bg_color = Color(0.09411765, 0.11372549, 0.14901961, 0.7294118)
+corner_radius_top_left = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="FontVariation" id="FontVariation_u5wa8"]
+spacing_glyph = -2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ie5f"]
+bg_color = Color(0.047058824, 0.05882353, 0.08235294, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m1gxf"]
+bg_color = Color(0.9372549, 0.6862745, 0.19215687, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="FontFile" id="FontFile_6kcgk"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/1/0/ascent = 0.0
+cache/0/1/0/descent = 0.0
+cache/0/1/0/underline_position = 0.0
+cache/0/1/0/underline_thickness = 0.0
+cache/0/1/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vnf3a"]
+bg_color = Color(0.654902, 0.6666667, 0.7019608, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 50
+border_color = Color(0.42352942, 0.44313726, 0.5176471, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sja1l"]
+bg_color = Color(0.39016426, 0.4045425, 0.4405466, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 50
+border_color = Color(0.3174049, 0.33407855, 0.3978788, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sjabv"]
+bg_color = Color(0.42352942, 0.44313726, 0.5176471, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.42352942, 0.44313726, 0.5176471, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 3
+
+[sub_resource type="FontVariation" id="FontVariation_sja1l"]
+spacing_glyph = -2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dxr5g"]
+bg_color = Color(0.00566115, 0.0056611523, 0.005661145, 0.45490196)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oihwm"]
+bg_color = Color(0.17254902, 0.21176471, 0.25490198, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.011764706, 0.015686275, 0.019607844, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="FontVariation" id="FontVariation_yvylx"]
+spacing_glyph = -2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0pdc"]
+bg_color = Color(0.39016426, 0.4045425, 0.4405466, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 50
+border_color = Color(0.3174049, 0.33407855, 0.3978788, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3o0nm"]
+bg_color = Color(0.39016426, 0.4045425, 0.4405466, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 50
+border_color = Color(0.3174049, 0.33407855, 0.3978788, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 3
+
+[sub_resource type="FontVariation" id="FontVariation_sjabv"]
+spacing_glyph = -2
+
+[node name="Garge" type="Node2D" unique_id=356318374]
+script = ExtResource("1_vnf3a")
+
+[node name="Background" type="TextureRect" parent="." unique_id=181881570]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -640.0
+offset_top = -344.0
+offset_right = 640.0
+offset_bottom = 344.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ldun4")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=27162456]
+
+[node name="CarBlueprint" type="Sprite2D" parent="." unique_id=992085702]
+position = Vector2(1.9073486e-06, -27.000002)
+scale = Vector2(0.9093481, 0.8903302)
+texture = ExtResource("3_3o0nm")
+
+[node name="Settings" type="Button" parent="." unique_id=1650806699]
+offset_left = -608.0
+offset_top = -312.0
+offset_right = -544.0
+offset_bottom = -248.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
+icon_alignment = 1
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Profile" type="Button" parent="." unique_id=897402263]
+offset_left = 544.0
+offset_top = -312.0
+offset_right = 608.0
+offset_bottom = -248.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24ron")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jv5qs")
+icon_alignment = 1
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Resourses" type="Panel" parent="Profile" unique_id=405989889]
+layout_mode = 0
+offset_left = -120.0
+offset_top = 8.0
+offset_right = 48.0
+offset_bottom = 56.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y26gl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Coin_label" type="Label" parent="Profile/Resourses" unique_id=794374137]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.71400005
+anchor_top = 0.27100003
+anchor_right = 0.71400005
+anchor_bottom = 0.27100003
+offset_left = -143.95201
+offset_top = -11.008001
+offset_right = -31.952011
+offset_bottom = 10.991999
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Coin" type="Sprite2D" parent="Profile/Resourses/Coin_label" unique_id=737036406]
+position = Vector2(124, 10)
+scale = Vector2(0.0234375, 0.0234375)
+texture = ExtResource("8_cilel")
+
+[node name="Diamond_label" type="Label" parent="Profile/Resourses" unique_id=2007056889]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.71400005
+anchor_top = 0.5
+anchor_right = 0.71400005
+anchor_bottom = 0.5
+offset_left = -143.95201
+offset_right = -31.952011
+offset_bottom = 22.0
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Diamond" type="Sprite2D" parent="Profile/Resourses/Diamond_label" unique_id=763395476]
+position = Vector2(124, 12)
+scale = Vector2(0.0234375, 0.0234375)
+texture = ExtResource("9_pfdqo")
+
+[node name="Profile_img" type="TextureRect" parent="Profile/Resourses" unique_id=1151805297]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.467
+anchor_top = 0.504
+anchor_right = 0.467
+anchor_bottom = 0.504
+offset_left = 26.072014
+offset_top = -106.92259
+offset_right = 506.07153
+offset_bottom = 959.74304
+scale = Vector2(0.2, 0.2)
+mouse_filter = 2
+texture = ExtResource("10_xp3ex")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Stats" type="Panel" parent="." unique_id=619390259]
+offset_left = 272.0
+offset_top = -216.0
+offset_right = 637.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_24ron")
+metadata/_edit_use_anchors_ = true
+
+[node name="Stats_label" type="Label" parent="Stats" unique_id=774473419]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.105000004
+anchor_right = 0.416
+anchor_bottom = 0.105000004
+offset_left = -139.84
+offset_top = -18.880001
+offset_right = 140.16
+offset_bottom = 19.119999
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 25
+text = "statistics.os.menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Speed_bar" type="ProgressBar" parent="Stats" unique_id=252657164]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.044000003
+anchor_top = 0.28100002
+anchor_right = 0.96400005
+anchor_bottom = 0.32000002
+offset_left = 8.200008
+offset_top = -0.93600464
+offset_right = -47.600006
+offset_bottom = -0.9200058
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
+theme_override_styles/fill = SubResource("StyleBoxFlat_m1gxf")
+max_value = 500.0
+value = 50.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Speed_stat" type="Label" parent="Stats/Speed_bar" unique_id=92063063]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.328
+anchor_right = 0.416
+anchor_bottom = 0.328
+offset_left = 67.52
+offset_top = -35.28
+offset_right = 163.51999
+offset_bottom = -7.2799983
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Speed_label" type="Label" parent="Stats/Speed_bar" unique_id=1426599401]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.24200001
+anchor_right = 0.48200002
+anchor_bottom = 0.24200001
+offset_left = -134.96
+offset_top = -34.42
+offset_right = -15.2200165
+offset_bottom = -6.419998
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "speed.os.menu"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Acceleration_bar" type="ProgressBar" parent="Stats" unique_id=1826297487]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.044000003
+anchor_top = 0.28100002
+anchor_right = 0.96400005
+anchor_bottom = 0.32000002
+offset_left = 7.9399986
+offset_top = 48.063995
+offset_right = -47.860016
+offset_bottom = 48.079994
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontFile_6kcgk")
+theme_override_font_sizes/font_size = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
+theme_override_styles/fill = SubResource("StyleBoxFlat_m1gxf")
+max_value = 10.0
+value = 10.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Acceleration_stat" type="Label" parent="Stats/Acceleration_bar" unique_id=1597495227]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.328
+anchor_right = 0.416
+anchor_bottom = 0.328
+offset_left = 67.52
+offset_top = -35.28
+offset_right = 163.51999
+offset_bottom = -7.2799983
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Acceleration_label" type="Label" parent="Stats/Acceleration_bar" unique_id=1672802095]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.24200001
+anchor_right = 0.48200002
+anchor_bottom = 0.24200001
+offset_left = -134.96
+offset_top = -34.42
+offset_right = -14.960007
+offset_bottom = -6.419998
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "acceleration.os.menu"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Handling_bar" type="ProgressBar" parent="Stats" unique_id=1878911558]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.044000003
+anchor_top = 0.28100002
+anchor_right = 0.96400005
+anchor_bottom = 0.32000002
+offset_left = 8.200008
+offset_top = 96.063995
+offset_right = -47.600006
+offset_bottom = 96.079994
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontFile_6kcgk")
+theme_override_font_sizes/font_size = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
+theme_override_styles/fill = SubResource("StyleBoxFlat_m1gxf")
+max_value = 10.0
+value = 10.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Handling_stat" type="Label" parent="Stats/Handling_bar" unique_id=839232122]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.328
+anchor_right = 0.416
+anchor_bottom = 0.328
+offset_left = 67.52
+offset_top = -35.28
+offset_right = 163.51999
+offset_bottom = -7.2799983
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Handling_label" type="Label" parent="Stats/Handling_bar" unique_id=990028294]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.24200001
+anchor_right = 0.48200002
+anchor_bottom = 0.24200001
+offset_left = -134.96
+offset_top = -34.42
+offset_right = -15.2200165
+offset_bottom = -6.419998
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "management.os.menu"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Braking_bar" type="ProgressBar" parent="Stats" unique_id=223794828]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.044000003
+anchor_top = 0.28100002
+anchor_right = 0.96400005
+anchor_bottom = 0.32000002
+offset_left = 7.9399986
+offset_top = 144.064
+offset_right = -47.860016
+offset_bottom = 144.07999
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontFile_6kcgk")
+theme_override_font_sizes/font_size = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
+theme_override_styles/fill = SubResource("StyleBoxFlat_m1gxf")
+max_value = 10.0
+value = 10.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Braking_stat" type="Label" parent="Stats/Braking_bar" unique_id=536357795]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.416
+anchor_top = 0.328
+anchor_right = 0.416
+anchor_bottom = 0.328
+offset_left = 67.52
+offset_top = -35.28
+offset_right = 163.51999
+offset_bottom = -7.2799983
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Braking_label" type="Label" parent="Stats/Braking_bar" unique_id=1645484300]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.24200001
+anchor_right = 0.48200002
+anchor_bottom = 0.24200001
+offset_left = -134.96
+offset_top = -34.42
+offset_right = -14.960007
+offset_bottom = -6.419998
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_u5wa8")
+theme_override_font_sizes/font_size = 20
+text = "braking.os.menu"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Car1" type="Button" parent="." unique_id=513607646]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -608.0
+offset_top = 136.00002
+offset_right = -381.2428
+offset_bottom = 295.92627
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_vnf3a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_sja1l")
+
+[node name="CarPngImage4195349310" type="Sprite2D" parent="Car1" unique_id=1919646559]
+position = Vector2(113.32935, 56)
+scale = Vector2(0.39290023, 0.38037717)
+texture = ExtResource("7_q0pdc")
+
+[node name="Panel2" type="Panel" parent="Car1" unique_id=1137640324]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.395
+anchor_right = 0.5
+anchor_bottom = 0.395
+offset_left = -107.69394
+offset_top = 56.82911
+offset_right = 108.63043
+offset_bottom = 96.82911
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sjabv")
+
+[node name="Car_label" type="Label" parent="Car1" unique_id=392586272]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.395
+anchor_right = 0.5
+anchor_bottom = 0.395
+offset_left = -100.24957
+offset_top = 57.267437
+offset_right = 105.28009
+offset_bottom = 95.26744
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_sja1l")
+theme_override_font_sizes/font_size = 25
+text = "Nissan Silvia S15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Car2" type="Button" parent="." unique_id=433601670]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = 136.00002
+offset_right = -133.2428
+offset_bottom = 295.92627
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_vnf3a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_sja1l")
+
+[node name="CarPngImage4195349310" type="Sprite2D" parent="Car2" unique_id=553021586]
+position = Vector2(113.32935, 56)
+scale = Vector2(0.38007092, 0.38200265)
+texture = ExtResource("8_3o0nm")
+
+[node name="Panel2" type="Panel" parent="Car2" unique_id=1087002995]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.395
+anchor_right = 0.5
+anchor_bottom = 0.395
+offset_left = -107.69394
+offset_top = 56.82911
+offset_right = 108.63043
+offset_bottom = 96.82911
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sjabv")
+
+[node name="Car_label" type="Label" parent="Car2" unique_id=1360587639]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.395
+anchor_right = 0.5
+anchor_bottom = 0.395
+offset_left = -100.24953
+offset_top = 57.267437
+offset_right = 105.280106
+offset_bottom = 95.26744
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_sja1l")
+theme_override_font_sizes/font_size = 25
+text = "Porsche 911"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lock" type="Button" parent="Car2" unique_id=1287244063]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.37859
+offset_top = -79.96315
+offset_right = 116.16971
+offset_bottom = 78.013985
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dxr5g")
+
+[node name="Panel2" type="Panel" parent="Car2/Lock" unique_id=1864058850]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45651665
+anchor_top = 0.37936515
+anchor_right = 0.54348344
+anchor_bottom = 0.37936515
+offset_left = -72.0
+offset_top = -13.152008
+offset_right = 72.0
+offset_bottom = 21.147995
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oihwm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Engine_price" type="Label" parent="Car2/Lock/Panel2" unique_id=1334238464]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.722
+anchor_top = 0.5
+anchor_right = 0.722
+anchor_bottom = 0.5
+offset_left = -101.985054
+offset_top = -17.757996
+offset_right = 18.03199
+offset_bottom = 17.242004
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_yvylx")
+theme_override_font_sizes/font_size = 25
+text = "25000"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Coin" type="Sprite2D" parent="Car2/Lock/Panel2/Engine_price" unique_id=1485598522]
+position = Vector2(108.62598, 18.15039)
+scale = Vector2(0.031250015, 0.031250015)
+texture = ExtResource("8_cilel")
+
+[node name="Car3" type="Button" parent="." unique_id=867554901]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = 136.00002
+offset_right = 114.7572
+offset_bottom = 295.92627
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_vnf3a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_sja1l")
+
+[node name="CarPngImage4195349310" type="Sprite2D" parent="Car3" unique_id=994037099]
+position = Vector2(113.32935, 56)
+scale = Vector2(0.39373085, 0.3852957)
+texture = ExtResource("9_oihwm")
+
+[node name="Panel2" type="Panel" parent="Car3" unique_id=1047839938]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.395
+anchor_right = 0.5
+anchor_bottom = 0.395
+offset_left = -107.69394
+offset_top = 56.82911
+offset_right = 108.63043
+offset_bottom = 96.82911
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sjabv")
+
+[node name="Car_label" type="Label" parent="Car3" unique_id=1420169811]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4244508
+anchor_top = 0.39499998
+anchor_right = 0.62115246
+anchor_bottom = 0.39500004
+offset_left = -86.15515
+offset_top = 57.26744
+offset_right = 80.84485
+offset_bottom = 95.26743
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_sja1l")
+theme_override_font_sizes/font_size = 25
+text = "Ferrari F40"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Lock" type="Button" parent="Car3" unique_id=1809989781]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.37859
+offset_top = -79.96315
+offset_right = 116.16971
+offset_bottom = 78.013985
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dxr5g")
+
+[node name="Panel2" type="Panel" parent="Car3/Lock" unique_id=1034083987]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45651665
+anchor_top = 0.37936515
+anchor_right = 0.54348344
+anchor_bottom = 0.37936515
+offset_left = -72.0
+offset_top = -13.152008
+offset_right = 72.0
+offset_bottom = 21.147995
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oihwm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Engine_price" type="Label" parent="Car3/Lock/Panel2" unique_id=1670272919]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.722
+anchor_top = 0.5
+anchor_right = 0.722
+anchor_bottom = 0.5
+offset_left = -101.985054
+offset_top = -17.757996
+offset_right = 18.03199
+offset_bottom = 17.242004
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_yvylx")
+theme_override_font_sizes/font_size = 25
+text = "75000"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Coin" type="Sprite2D" parent="Car3/Lock/Panel2/Engine_price" unique_id=1685068448]
+position = Vector2(108.62598, 18.15039)
+scale = Vector2(0.031250015, 0.031250015)
+texture = ExtResource("8_cilel")
+
+[node name="Car4" type="Button" parent="." unique_id=335932859]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 136.0
+offset_top = 136.00002
+offset_right = 362.7572
+offset_bottom = 295.92627
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_vnf3a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_q0pdc")
+disabled = true
+
+[node name="CarPngImage4195349310" type="Sprite2D" parent="Car4" unique_id=292527186]
+visible = false
+position = Vector2(113.32935, 56)
+scale = Vector2(1.6457711, 0.7499999)
+texture = ExtResource("4_ldun4")
+
+[node name="Panel2" type="Panel" parent="Car4" unique_id=1206875317]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.395
+anchor_right = 0.5
+anchor_bottom = 0.395
+offset_left = -107.69394
+offset_top = 56.82911
+offset_right = 108.63043
+offset_bottom = 96.82911
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sjabv")
+
+[node name="Car_label" type="Label" parent="Car4" unique_id=672597394]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42445084
+anchor_top = 0.39499998
+anchor_right = 0.62115234
+anchor_bottom = 0.39500004
+offset_left = -86.15515
+offset_top = 57.26744
+offset_right = 80.84485
+offset_bottom = 95.26743
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_sja1l")
+theme_override_font_sizes/font_size = 25
+text = "Locked"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Lock" type="Button" parent="Car4" unique_id=719307794]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.37859
+offset_top = -79.96315
+offset_right = 116.16971
+offset_bottom = 78.013985
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dxr5g")
+
+[node name="Car5" type="Button" parent="." unique_id=218524372]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 136.00002
+offset_right = 610.7572
+offset_bottom = 295.92627
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_vnf3a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_3o0nm")
+disabled = true
+
+[node name="CarPngImage4195349310" type="Sprite2D" parent="Car5" unique_id=659755113]
+visible = false
+position = Vector2(113.32935, 56)
+scale = Vector2(1.6457711, 0.7499999)
+texture = ExtResource("4_ldun4")
+
+[node name="Panel2" type="Panel" parent="Car5" unique_id=1548495111]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.395
+anchor_right = 0.5
+anchor_bottom = 0.395
+offset_left = -107.69394
+offset_top = 56.82911
+offset_right = 108.63043
+offset_bottom = 96.82911
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sjabv")
+
+[node name="Car_label" type="Label" parent="Car5" unique_id=1040226330]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4244508
+anchor_top = 0.39499998
+anchor_right = 0.62115246
+anchor_bottom = 0.39500004
+offset_left = -86.15515
+offset_top = 57.26744
+offset_right = 80.84485
+offset_bottom = 95.26743
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_sja1l")
+theme_override_font_sizes/font_size = 25
+text = "Locked"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Lock" type="Button" parent="Car5" unique_id=1419605490]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.37859
+offset_top = -79.96315
+offset_right = 116.16971
+offset_bottom = 78.013985
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.98784083, 1.0129666)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dxr5g")
+
+[node name="Select" type="Button" parent="." unique_id=160478478]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 384.0
+offset_top = 56.0
+offset_right = 608.0
+offset_bottom = 128.0
+
+[node name="SelectGarage" type="Sprite2D" parent="Select" unique_id=785591092]
+position = Vector2(112, 31.999992)
+scale = Vector2(0.23787978, 0.19645292)
+texture = ExtResource("8_sjabv")
+
+[node name="Garage" type="Label" parent="Select" unique_id=508781657]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5277778
+anchor_right = 0.5
+anchor_bottom = 0.5277778
+offset_left = -96.0
+offset_top = -36.0
+offset_right = 94.0
+offset_bottom = 28.0
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_sjabv")
+theme_override_font_sizes/font_size = 28
+text = "select.garage"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="Car1" to="." method="_on_Car_pressed"]
+[connection signal="pressed" from="Car1" to="." method="_on_car_1_pressed"]
+[connection signal="pressed" from="Car2" to="." method="_on_car_2_pressed"]
+[connection signal="pressed" from="Car2/Lock" to="." method="_on_lock_pressed"]
+[connection signal="pressed" from="Car3" to="." method="_on_car_3_pressed"]
+[connection signal="pressed" from="Car3/Lock" to="." method="_on_lock2_pressed"]
+[connection signal="pressed" from="Select" to="." method="_on_select_pressed"]
+[connection signal="toggled" from="Select" to="." method="_on_select_toggled"]

@@ -18,7 +18,7 @@ const POS_HIDDEN_RIGHT = Vector2(900, 350)
  
 func _ready():
 	# Загружаем сохраненный выбор
-	Global.load_game()
+	Global.load_track()
 	current_index = Global.selected_track_index
 	
 	if btn_save and not btn_save.pressed.is_connected(_on_save_pressed):
@@ -41,7 +41,7 @@ func _on_right_pressed():
 # Сохраняем выбор в глобальный скрипт только при нажатии на кнопку "Сохранить"
 func _on_save_pressed():
 	Global.selected_track_index = current_index
-	Global.save_game()
+	Global.save_track()
 	queue_free() # Закрываем сцену выбора
  
 # При нажатии на крестик просто закрываем сцену без сохранения

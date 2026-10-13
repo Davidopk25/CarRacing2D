@@ -9,7 +9,8 @@ func _on_Play_pressed() -> void:
  
 func _on_Start_Over_pressed() -> void:
 	# Игра сбрасывается до автоматических настроек
-	pass
+	Global.reset_for_newgame()
+	get_tree().change_scene_to_file("res://scene/os_menu.tscn") 
 
 func _on_Settings_pressed() -> void:
 	# Создаем экземпляр настроек
