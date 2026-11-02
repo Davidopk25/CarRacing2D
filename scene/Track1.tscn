@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cap6hflk84ewj"]
+
+[ext_resource type="Texture2D" uid="uid://qecicbtn3glr" path="res://image/Track_image/Track1.jpg" id="1_ggpcd"]
+[ext_resource type="Texture2D" uid="uid://cpcyhuw40dpbj" path="res://image/BG.png" id="2_1hh8v"]
+[ext_resource type="Texture2D" uid="uid://cw5ds7da7dpqf" path="res://image/Garage/Back_Garage.png" id="2_r4l4m"]
+
+[node name="Track1" type="Node2D" unique_id=2055905091]
+
+[node name="Track1" type="Sprite2D" parent="." unique_id=1900435474]
+scale = Vector2(1.86, 2)
+texture = ExtResource("1_ggpcd")
+
+[node name="ProgressBar" type="Panel" parent="." unique_id=70431000]
+offset_left = -1247.0
+offset_top = 415.0
+offset_right = -755.0
+offset_bottom = 743.0
+
+[node name="LapCount" type="Label" parent="ProgressBar" unique_id=797772581]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 211.0
+offset_right = 473.0
+offset_bottom = 303.0
+
+[node name="RaceTime" type="Label" parent="ProgressBar" unique_id=1550627989]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 116.0
+offset_right = 466.0
+offset_bottom = 200.0
+
+[node name="DistanceBar" type="ProgressBar" parent="ProgressBar" unique_id=2089971589]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 19.0
+offset_right = 483.0
+offset_bottom = 109.0
+
+[node name="Bg2" type="Sprite2D" parent="ProgressBar" unique_id=323604557]
+position = Vector2(247.99995, 160)
+scale = Vector2(0.8824083, 0.6491936)
+texture = ExtResource("2_1hh8v")
+
+[node name="SpeedStat" type="Panel" parent="." unique_id=1920096536]
+offset_left = 729.0
+offset_top = 396.0
+offset_right = 1269.0
+offset_bottom = 757.0
+
+[node name="Bg" type="Sprite2D" parent="SpeedStat" unique_id=185111863]
+position = Vector2(270.5, 177.99998)
+scale = Vector2(0.911571, 0.67741936)
+texture = ExtResource("2_1hh8v")
+
+[node name="CurrentSpeed" type="Label" parent="SpeedStat" unique_id=1224243352]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 23.0
+offset_right = 536.0
+offset_bottom = 171.0
+
+[node name="TopSpeed" type="Label" parent="SpeedStat" unique_id=517492400]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 191.0
+offset_right = 535.0
+offset_bottom = 333.0
+
+[node name="ExitButtonTrack" type="Button" parent="." unique_id=182350526]
+offset_left = -1259.0
+offset_top = -753.0
+offset_right = -915.0
+offset_bottom = -578.0
+
+[node name="BackGarage" type="Sprite2D" parent="ExitButtonTrack" unique_id=362079364]
+position = Vector2(173, 87)
+scale = Vector2(0.45257905, 0.5284091)
+texture = ExtResource("2_r4l4m")
