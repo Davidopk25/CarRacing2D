@@ -25,6 +25,7 @@ var all_prices = []
 
 func _ready() -> void:
 	load_settings()
+	load_CARS()
 
 # Загрузка настроек из файла
 func load_settings() -> void:

@@ -1,83 +1,311 @@
-[gd_scene format=3 uid="uid://cap6hflk84ewj"]
+[gd_scene format=3 uid="uid://ds23vw6834qir"]
 
-[ext_resource type="Texture2D" uid="uid://c6ech535cdrv0" path="res://image/Track_image/Track2.jpg" id="1_r4l4m"]
-[ext_resource type="Texture2D" uid="uid://cpcyhuw40dpbj" path="res://image/BG.png" id="2_1hh8v"]
+[ext_resource type="Script" uid="uid://cr0sjubcq0qjl" path="res://scripts/Track1.gd" id="1_r4l4m"]
+[ext_resource type="Texture2D" uid="uid://qecicbtn3glr" path="res://image/Track_image/Track1.jpg" id="2_1hh8v"]
 [ext_resource type="Texture2D" uid="uid://cw5ds7da7dpqf" path="res://image/Garage/Back_Garage.png" id="2_r4l4m"]
+[ext_resource type="Texture2D" uid="uid://cpvetmc4kn0th" path="res://image/Garage/cars/Silvia/1.png" id="5_iw2j3"]
 
-[node name="Track1" type="Node2D" unique_id=2055905091]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6pmnr"]
+bg_color = Color(0.109375, 0.109375, 0.109375, 1)
 
-[node name="Track1" type="Sprite2D" parent="." unique_id=307375907]
-position = Vector2(1.5001369, 4.00006)
-scale = Vector2(2.5009766, 2.6713288)
-texture = ExtResource("1_r4l4m")
+[sub_resource type="Gradient" id="Gradient_6m8jk"]
+offsets = PackedFloat32Array(0.022388041, 0.14925373, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.4392157, 0, 0, 0, 0.9098039)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fkwcx"]
+gradient = SubResource("Gradient_6m8jk")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xhg7k"]
+texture = SubResource("GradientTexture2D_fkwcx")
+
+[sub_resource type="Gradient" id="Gradient_a01sx"]
+offsets = PackedFloat32Array(0.022388041, 0.14925373, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.4392157, 0, 0, 0, 0.9098039)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fb21p"]
+gradient = SubResource("Gradient_a01sx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dpho6"]
+texture = SubResource("GradientTexture2D_fb21p")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6pmnr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qa2gp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pukvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xg6vf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gnvis"]
+
+[sub_resource type="Gradient" id="Gradient_1hh8v"]
+offsets = PackedFloat32Array(0.052238807, 0.12686567, 0.53731346, 0.9029851, 0.96268654)
+colors = PackedColorArray(0, 0, 0, 0.3137255, 0, 0, 0, 0.50980395, 0, 0, 0, 1, 0, 0, 0, 0.50980395, 0, 0, 0, 0.3137255)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_to05a"]
+gradient = SubResource("Gradient_1hh8v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iw2j3"]
+texture = SubResource("GradientTexture2D_to05a")
+
+[sub_resource type="Curve2D" id="Curve2D_to05a"]
+_data = {
+"points": PackedVector2Array(8.5762825, -0.15972102, -8.5762825, 0.15972102, 0, 0, 42.303192, 9.318115, -42.303192, -9.318115, -224, 0, -9.090909, 161.22626, 9.090909, -161.22626, -356, -200, -73.864395, 12.745229, 73.864395, -12.745229, -151, -433, -86.9437, -24.746689, 86.9437, 24.746689, 286, -420, 54.435738, -25.722721, -54.435738, 25.722721, 304, -268, 106.399796, 23.381136, -106.399796, -23.381136, 52, -285, 53.638943, -34.94771, -53.638943, 34.94771, -138, -303, -65.524704, 24.100456, 65.524704, -24.100456, -132, -192, -68.675995, -33.33091, 68.675995, 33.33091, 13, -188, -95.82237, -31.06691, 95.82237, 31.06691, 213, -152, 76.53257, -20.572025, -76.53257, 20.572025, 213, -7, 0, 0, 0, 0, 0, 0)
+}
+point_count = 13
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa2gp"]
+size = Vector2(44.57094, 20.666111)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pmnr"]
+size = Vector2(1.5, 54)
+
+[sub_resource type="Curve2D" id="Curve2D_1hh8v"]
+_data = {
+"points": PackedVector2Array(-71.842125, 3.3152914, 71.842125, -3.3152914, 0.99997044, -198.98477, -90.66112, -28.214615, 90.66112, 28.214615, 252.99997, -179.69547, 6.588724, -68.62362, -6.588724, 68.62362, 334, 30.456802, 76.33756, -1.7222352, -76.33756, 1.7222352, 141.00003, 207.10658, 61.491177, 9.340471, -61.491177, -9.340471, -284.99997, 201.01527, -20.52632, 18.944462, 20.52632, -18.944462, -312, 95.43151, -51.78231, 6.630569, 51.78231, -6.630569, -250.99998, 77.157394, -112.42826, -30.784729, 112.42826, 30.784729, -48.999985, 109.64468, -21.459332, 28.416693, 21.459332, -28.416693, 141.00002, 64.974594, 45.700188, 3.393558, -45.700188, -3.393558, 138, -6.0913916, 103.27273, 28.163261, -103.27273, -28.163261, 8.999997, -17.258884, 73.026794, 18.360527, -73.026794, -18.360527, -92.00001, -54.82232, 21.841022, 9.945837, -21.841022, -9.945837, -223.00002, -81.21823, -23.89904, 22.364925, 23.89904, -22.364925, -237.00003, -169.5431, 0, 0, 0, 0, 0.99997044, -198.98477)
+}
+point_count = 15
+
+[node name="Track1" type="Node2D" unique_id=2055905091 node_paths=PackedStringArray("main_path", "overtake_path", "finish_line")]
+script = ExtResource("1_r4l4m")
+custom_start_positions = Array[Vector2]([Vector2(125, 7.5), Vector2(25, 7.5), Vector2(50, -1.5), Vector2(75, -1.5), Vector2(100, -1.5)])
+main_path = NodePath("Path2D")
+overtake_path = NodePath("Path2D2")
+finish_line = NodePath("Area2D")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1150339674]
+
+[node name="Panel" type="Panel" parent="." unique_id=48921514]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2500.0
+offset_top = -1250.0
+offset_right = 2500.0
+offset_bottom = 1250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6pmnr")
+
+[node name="Track1" type="Sprite2D" parent="." unique_id=1900435474]
+position = Vector2(2.9999998, -5.9999995)
+scale = Vector2(0.812, 0.845)
+texture = ExtResource("2_1hh8v")
 
 [node name="ProgressBar" type="Panel" parent="." unique_id=70431000]
-visible = false
-offset_left = -1247.0
-offset_top = 415.0
-offset_right = -755.0
-offset_bottom = 743.0
+offset_left = -550.0
+offset_top = 235.0
+offset_right = -300.0
+offset_bottom = 310.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_xhg7k")
 
 [node name="LapCount" type="Label" parent="ProgressBar" unique_id=797772581]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 211.0
-offset_right = 473.0
-offset_bottom = 303.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 210.0
+offset_bottom = 60.0
 
 [node name="RaceTime" type="Label" parent="ProgressBar" unique_id=1550627989]
 layout_mode = 0
-offset_left = 12.0
-offset_top = 116.0
-offset_right = 466.0
-offset_bottom = 200.0
-
-[node name="DistanceBar" type="ProgressBar" parent="ProgressBar" unique_id=2089971589]
-layout_mode = 0
-offset_left = 8.0
-offset_top = 19.0
-offset_right = 483.0
-offset_bottom = 109.0
-
-[node name="Bg2" type="Sprite2D" parent="ProgressBar" unique_id=323604557]
-position = Vector2(247.99995, 160)
-scale = Vector2(0.8824083, 0.6491936)
-texture = ExtResource("2_1hh8v")
+offset_left = 10.0
+offset_top = 40.0
+offset_right = 210.0
+offset_bottom = 90.0
 
 [node name="SpeedStat" type="Panel" parent="." unique_id=1920096536]
-visible = false
-offset_left = 729.0
-offset_top = 396.0
-offset_right = 1269.0
-offset_bottom = 757.0
-
-[node name="Bg" type="Sprite2D" parent="SpeedStat" unique_id=185111863]
-position = Vector2(270.5, 177.99998)
-scale = Vector2(0.911571, 0.67741936)
-texture = ExtResource("2_1hh8v")
+offset_left = 305.0
+offset_top = 235.0
+offset_right = 554.999
+offset_bottom = 310.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dpho6")
 
 [node name="CurrentSpeed" type="Label" parent="SpeedStat" unique_id=1224243352]
 layout_mode = 0
-offset_left = 6.0
-offset_top = 23.0
-offset_right = 536.0
-offset_bottom = 171.0
+offset_left = 40.0
+offset_top = 10.0
+offset_right = 240.0
+offset_bottom = 60.0
+horizontal_alignment = 2
 
 [node name="TopSpeed" type="Label" parent="SpeedStat" unique_id=517492400]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 191.0
-offset_right = 535.0
-offset_bottom = 333.0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 240.0
+offset_bottom = 90.0
+horizontal_alignment = 2
 
 [node name="ExitButtonTrack" type="Button" parent="." unique_id=182350526]
-visible = false
-offset_left = -1259.0
-offset_top = -753.0
-offset_right = -915.0
-offset_bottom = -578.0
+offset_left = -550.0
+offset_top = -300.0
+offset_right = -398.0
+offset_bottom = -235.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6pmnr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qa2gp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pukvj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xg6vf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gnvis")
 
-[node name="BackGarage" type="Sprite2D" parent="ExitButtonTrack" unique_id=362079364]
-position = Vector2(173, 87)
-scale = Vector2(0.45257905, 0.5284091)
+[node name="TextureRect" type="TextureRect" parent="ExitButtonTrack" unique_id=725680214]
+layout_mode = 0
+offset_left = -35.0
+offset_top = -50.0
+offset_right = 190.0
+offset_bottom = 115.0
 texture = ExtResource("2_r4l4m")
+expand_mode = 1
+
+[node name="DistanceBar" type="ProgressBar" parent="." unique_id=2089971589]
+offset_left = -120.0
+offset_top = 245.0
+offset_right = 120.0
+offset_bottom = 285.0
+theme_override_styles/background = SubResource("StyleBoxTexture_iw2j3")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1583729348]
+position = Vector2(0, 207)
+curve = SubResource("Curve2D_to05a")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=483003450]
+rotation = 3.1229713
+
+[node name="TextureRect" type="TextureRect" parent="Path2D/PathFollow2D" unique_id=38822156]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -12.5
+offset_right = 25.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_iw2j3")
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D" unique_id=2145374266]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Area2D" unique_id=2000710805]
+position = Vector2(2.260871, -0.62690735)
+shape = SubResource("RectangleShape2D_qa2gp")
+
+[node name="PathFollow2D2" type="PathFollow2D" parent="Path2D" unique_id=700519093]
+rotation = 3.1229713
+
+[node name="TextureRect" type="TextureRect" parent="Path2D/PathFollow2D2" unique_id=1544271816]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -12.5
+offset_right = 25.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_iw2j3")
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D2" unique_id=803791027]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D2/Area2D" unique_id=1507786408]
+position = Vector2(2.2608712, -0.62690735)
+shape = SubResource("RectangleShape2D_qa2gp")
+
+[node name="PathFollow2D3" type="PathFollow2D" parent="Path2D" unique_id=491257945]
+position = Vector2(9.998266, -0.18620344)
+rotation = 3.1229713
+h_offset = -10.0
+
+[node name="TextureRect" type="TextureRect" parent="Path2D/PathFollow2D3" unique_id=1304841307]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -12.5
+offset_right = 25.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_iw2j3")
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D3" unique_id=1263211188]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D3/Area2D" unique_id=531074223]
+position = Vector2(2.2608707, -0.62690735)
+shape = SubResource("RectangleShape2D_qa2gp")
+
+[node name="PathFollow2D4" type="PathFollow2D" parent="Path2D" unique_id=807692068]
+position = Vector2(9.998266, -0.18620344)
+rotation = 3.1229713
+h_offset = -10.0
+
+[node name="TextureRect" type="TextureRect" parent="Path2D/PathFollow2D4" unique_id=701476508]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -12.5
+offset_right = 25.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_iw2j3")
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D4" unique_id=1793336819]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D4/Area2D" unique_id=1556622073]
+position = Vector2(2.2608707, -0.62690735)
+shape = SubResource("RectangleShape2D_qa2gp")
+
+[node name="PathFollow2D5" type="PathFollow2D" parent="Path2D" unique_id=528272695]
+position = Vector2(9.998266, -0.18620344)
+rotation = 3.1229713
+h_offset = -10.0
+
+[node name="TextureRect" type="TextureRect" parent="Path2D/PathFollow2D5" unique_id=326327506]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -12.5
+offset_right = 25.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_iw2j3")
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D5" unique_id=1759385936]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D5/Area2D" unique_id=1728013553]
+position = Vector2(2.2608707, -0.62690735)
+shape = SubResource("RectangleShape2D_qa2gp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=23905297]
+position = Vector2(0, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=71841010]
+shape = SubResource("RectangleShape2D_6pmnr")
+debug_color = Color(1, 1, 1, 1)
+
+[node name="Path2D2" type="Path2D" parent="." unique_id=211225544]
+position = Vector2(1, -4)
+rotation = -3.1415925
+scale = Vector2(1, 0.985)
+curve = SubResource("Curve2D_1hh8v")
