@@ -229,9 +229,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Camera2D" type="Camera2D" parent="." unique_id=27162456]
 
 [node name="Race" type="Button" parent="." unique_id=1593707850]
-offset_left = 360.0
+offset_left = 327.0
 offset_top = 168.0
-offset_right = 600.0
+offset_right = 567.0
 offset_bottom = 304.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
@@ -300,10 +300,10 @@ scale = Vector2(0.9093481, 0.8903302)
 texture = ExtResource("3_n1odv")
 
 [node name="Garage" type="Button" parent="." unique_id=585844384]
-offset_left = -598.0
-offset_top = 241.0
-offset_right = -386.0
-offset_bottom = 303.0
+offset_left = -565.0
+offset_top = 240.0
+offset_right = -353.0
+offset_bottom = 302.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_u5wa8")
@@ -348,9 +348,9 @@ vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Settings" type="Button" parent="." unique_id=1650806699]
-offset_left = -608.0
+offset_left = -565.0
 offset_top = -312.0
-offset_right = -544.0
+offset_right = -501.0
 offset_bottom = -248.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
@@ -379,9 +379,9 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Map" type="Button" parent="." unique_id=1806709157]
-offset_left = 536.0
+offset_left = 500.0
 offset_top = 96.0
-offset_right = 600.0
+offset_right = 564.0
 offset_bottom = 160.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
@@ -410,9 +410,9 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Profile" type="Button" parent="." unique_id=897402263]
-offset_left = 544.0
+offset_left = 500.0
 offset_top = -312.0
-offset_right = 608.0
+offset_right = 564.0
 offset_bottom = -248.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_gums7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_g7lur")
@@ -495,24 +495,24 @@ expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Stats" type="Panel" parent="." unique_id=619390259]
-offset_left = 272.0
+offset_left = 264.0
 offset_top = -216.0
 offset_right = 637.0
 offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_24ron")
-metadata/_edit_use_anchors_ = true
 
 [node name="Stats_label" type="Label" parent="Stats" unique_id=774473419]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.416
+anchor_left = 0.43120643
 anchor_top = 0.105000004
-anchor_right = 0.416
+anchor_right = 0.43120643
 anchor_bottom = 0.105000004
 offset_left = -139.84
 offset_top = -18.880001
 offset_right = 140.16
 offset_bottom = 19.119999
+scale = Vector2(0.92, 1)
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = SubResource("FontVariation_u5wa8")
 theme_override_font_sizes/font_size = 25
@@ -533,6 +533,7 @@ offset_top = -0.93600464
 offset_right = -47.600006
 offset_bottom = -0.9200058
 grow_horizontal = 2
+scale = Vector2(0.92, 1)
 theme_override_font_sizes/font_size = 1
 theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
 theme_override_styles/fill = SubResource("StyleBoxFlat_m1gxf")
@@ -607,6 +608,7 @@ offset_top = 48.063995
 offset_right = -47.860016
 offset_bottom = 48.079994
 grow_horizontal = 2
+scale = Vector2(0.92, 1)
 theme_override_fonts/font = SubResource("FontFile_6kcgk")
 theme_override_font_sizes/font_size = 1
 theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
@@ -683,6 +685,7 @@ offset_top = 96.063995
 offset_right = -47.600006
 offset_bottom = 96.079994
 grow_horizontal = 2
+scale = Vector2(0.92, 1)
 theme_override_fonts/font = SubResource("FontFile_6kcgk")
 theme_override_font_sizes/font_size = 1
 theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
@@ -759,6 +762,7 @@ offset_top = 144.064
 offset_right = -47.860016
 offset_bottom = 144.07999
 grow_horizontal = 2
+scale = Vector2(0.92, 1)
 theme_override_fonts/font = SubResource("FontFile_6kcgk")
 theme_override_font_sizes/font_size = 1
 theme_override_styles/background = SubResource("StyleBoxFlat_5ie5f")
@@ -824,10 +828,11 @@ value = 10.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Engine" type="Button" parent="." unique_id=469772168]
-offset_left = -344.0
+offset_left = -315.0
 offset_top = 96.0
-offset_right = -184.0
+offset_right = -155.0
 offset_bottom = 320.0
+scale = Vector2(0.91999996, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_xadyu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jv5qs")
 theme_override_styles/hover = SubResource("StyleBoxFlat_w68ru")
@@ -951,10 +956,11 @@ scale = Vector2(0.14648439, 0.14648439)
 texture = ExtResource("4_u5wa8")
 
 [node name="Chassis" type="Button" parent="." unique_id=1251276366]
-offset_left = -168.0
+offset_left = -155.0
 offset_top = 96.0
-offset_right = -8.0
+offset_right = 5.0
 offset_bottom = 320.0
+scale = Vector2(0.91999996, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_xadyu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jv5qs")
 theme_override_styles/hover = SubResource("StyleBoxFlat_w68ru")
@@ -1082,6 +1088,7 @@ offset_left = 8.0
 offset_top = 96.0
 offset_right = 168.0
 offset_bottom = 320.0
+scale = Vector2(0.91999996, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_xadyu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jv5qs")
 theme_override_styles/hover = SubResource("StyleBoxFlat_w68ru")
@@ -1205,10 +1212,11 @@ scale = Vector2(0.1015625, 0.1015625)
 texture = ExtResource("13_x2bia")
 
 [node name="Gearbox" type="Button" parent="." unique_id=584425150]
-offset_left = 181.0
+offset_left = 168.00002
 offset_top = 96.0
-offset_right = 341.0
+offset_right = 328.0
 offset_bottom = 320.0
+scale = Vector2(0.91999996, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_xadyu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jv5qs")
 theme_override_styles/hover = SubResource("StyleBoxFlat_w68ru")
