@@ -138,7 +138,7 @@ func _ready() -> void:
 	Global.load_CARS()
 	Global.load_user()
 
-	total_laps = randi_range(3, 7) if randomize_laps_each_race else clampi(total_laps, 3, 7)
+	total_laps = randi_range(999, 999) if randomize_laps_each_race else clampi(total_laps, 999, 999)
 
 	if main_path == null:
 		main_path = get_node_or_null("Path2D")

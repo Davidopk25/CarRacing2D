@@ -4,6 +4,8 @@ keys,ru,en
 "settings.menu","НАСТРОЙКИ","SETTINGS"
 "exit.menu","ВЫЙТИ","EXIT"
 
+
+"start.os.menu", "ВПЕРЁД", "GO RACE"
 "engine.os.menu","Двигатель","Engine"
 "сhassis.os.menu","Шасси","Chassis"
 "brakes.os.menu","Тормоза","Brakes"
